@@ -5,7 +5,7 @@ t = turtle.Turtle()
 t.speed(0)
 t.hideturtle()
 
-# --- Helper: draw a filled circle ---
+
 def FILLcircle(radius, color):
     t.color(color)
     t.penup()
@@ -24,16 +24,10 @@ def FILLcircle(radius, color):
     t.setheading(0)
     t.pendown()
 
-# --- Helper: draw Circle Set (CS) ---
+
 def CS(a, b, c, d, fill_color):
-    """
-    a = radius of big imaginary circle
-    b = number of small circles around
-    c = radius of each small circle
-    d = whether to fill (1 = yes)
-    fill_color = color string
-    """
-    # Store turtle's original position and heading
+    
+    
     original_position = t.pos()
     original_heading = t.heading()
 
@@ -47,7 +41,7 @@ def CS(a, b, c, d, fill_color):
         center_y = a * math.sin(theta)
 
         t.penup()
-        t.goto(center_x, center_y - c)  # adjust so circle is centered
+        t.goto(center_x, center_y - c) 
         t.pendown()
 
         if d == 1:
@@ -58,7 +52,7 @@ def CS(a, b, c, d, fill_color):
         if d == 1:
             t.end_fill()
 
-    # Return turtle to original state
+    
     t.penup()
     t.goto(original_position)
     t.setheading(original_heading)
@@ -79,34 +73,28 @@ t = turtle.Turtle()
 
     
 
-# --- Demo Design ---
+
 CS(280,24,40,1,"Orange")
 FILLcircle(280, "green")
-# --- Draw 24 small circles inside the large green circle ---
-inner_radius = 220  # radius of imaginary circle inside green
-num_circles = 24   # number of circles in the ring
-circle_size = 40    # radius of each small circle
 
-CS(inner_radius, num_circles, circle_size, 1, "yellow")  # fill color can match green
+inner_radius = 220  
+num_circles = 24   
+circle_size = 40    
+
+CS(inner_radius, num_circles, circle_size, 1, "yellow")  
 FILLcircle(200, "red")
- # --- Add small white circles inside red circle ---
-CS(160, 12, 15, 1, "white")  # 12 small white circles, radius 15, filled
 
+CS(160, 12, 15, 1, "white") 
 FILLcircle(150, "brown")
 
-CS(100, 24, 30, 1, "orange")  # outer spaced layer
-
-
-
-# --- Add Kathakali image in the center ---
-turtle.register_shape("kathakali.gif")  # register the image as a shape
+CS(100, 24, 30, 1, "orange")  
+turtle.register_shape("kathakali.gif") 
 img_turtle = turtle.Turtle()
 img_turtle.hideturtle()
 img_turtle.penup()
-img_turtle.goto(0, 0)  # center of the Pookalam
+img_turtle.goto(0, 0)  
 img_turtle.shape("kathakali.gif")
-img_turtle.stamp()  # place the image once
-
+img_turtle.stamp()  
 
 
 
