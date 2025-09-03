@@ -5,27 +5,30 @@ Welcome to CODE-A-പൂക്കളം, a creative coding challenge scheduled f
 
 
 ### Your Details
-- [Name] - [Branch] - [Semester]
+- BHAGYA SREE P L- CSE - S3
 
 
 
 ### Hosted Pookalam Link
 
-
+https://screenrec.com/share/6SVtXcxail
+https://github.com/bhagya56-afk/Code-A-Pookalam
 
 ### Pookalam Description
-Brief description about your pookalam. What makes it special and different.
+i've made my pookalam using python turtle. it has a kathakali image in the center.
+
 
 
 
 ### Technologies Used 
-
+python
 
 ### Video explaining How you build the pookalam
-
+https://screenrec.com/share/6SVtXcxail
 
 
 ### Screenshots
+<img width="1086" height="886" alt="code-a-pookalam" src="https://github.com/user-attachments/assets/59362f5f-7fe1-40d4-8987-bfca184c7806" />
 
 
 
